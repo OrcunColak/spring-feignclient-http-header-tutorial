@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,7 +24,19 @@ class ApiGatewayControllerTest {
     void testGather() {
         String getUrl = "http://localhost:8080/api/gateway/getQuote/1";
 
-        ResponseEntity<String> response = restTemplate.getForEntity(getUrl, String.class);
+        // Create HttpHeaders object to hold the headers
+        HttpHeaders headers = new HttpHeaders();
+
+        // Set the Content-Type header to application/json
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        // Add custom headers with custom values
+        headers.set("Authorization", "Bearer your_access_token");
+
+        // Create a HttpEntity with the headers
+        HttpEntity<String> entity = new HttpEntity<>(headers);
+
+        ResponseEntity<String> response = restTemplate.exchange(getUrl, HttpMethod.GET, entity, String.class);
         String message = response.getBody();
         assert message != null;
 
