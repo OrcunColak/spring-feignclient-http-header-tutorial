@@ -1,7 +1,7 @@
-package com.colak.springfeignclienttutorial.apigateway.controller;
+package com.colak.springtutorial.apigateway.controller;
 
-import com.colak.springfeignclienttutorial.apigateway.service.QuoteService;
-import com.colak.springfeignclienttutorial.util.HttpServletRequestUtil;
+import com.colak.springtutorial.apigateway.service.QuoteService;
+import com.colak.springtutorial.util.HttpServletRequestUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

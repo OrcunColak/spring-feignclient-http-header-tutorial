@@ -1,6 +1,6 @@
-package com.colak.springfeignclienttutorial.quote.controller;
+package com.colak.springtutorial.quote.controller;
 
-import com.colak.springfeignclienttutorial.util.HttpServletRequestUtil;
+import com.colak.springtutorial.util.HttpServletRequestUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;

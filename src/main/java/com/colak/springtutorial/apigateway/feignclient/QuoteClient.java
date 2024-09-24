@@ -1,6 +1,6 @@
-package com.colak.springfeignclienttutorial.apigateway.feignclient;
+package com.colak.springtutorial.apigateway.feignclient;
 
-import com.colak.springfeignclienttutorial.quote.controller.QuoteResponse;
+import com.colak.springtutorial.quote.controller.QuoteResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;

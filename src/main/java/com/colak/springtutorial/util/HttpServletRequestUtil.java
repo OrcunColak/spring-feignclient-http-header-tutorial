@@ -1,4 +1,4 @@
-package com.colak.springfeignclienttutorial.util;
+package com.colak.springtutorial.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;

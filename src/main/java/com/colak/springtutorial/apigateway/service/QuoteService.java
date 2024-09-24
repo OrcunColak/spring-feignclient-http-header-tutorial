@@ -1,7 +1,7 @@
-package com.colak.springfeignclienttutorial.apigateway.service;
+package com.colak.springtutorial.apigateway.service;
 
-import com.colak.springfeignclienttutorial.apigateway.feignclient.QuoteClient;
-import com.colak.springfeignclienttutorial.quote.controller.QuoteResponse;
+import com.colak.springtutorial.apigateway.feignclient.QuoteClient;
+import com.colak.springtutorial.quote.controller.QuoteResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;

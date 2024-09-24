@@ -1,4 +1,4 @@
-package com.colak.springfeignclienttutorial.apigateway.controller;
+package com.colak.springtutorial.apigateway.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
